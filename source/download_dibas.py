@@ -95,4 +95,6 @@ if os.path.exists(DATASET_DIR + "/Acinetobacter.baumanii/Acinetobacter.baumanii"
 if os.path.exists(DATASET_DIR + "/Acinetobacter.baumanii_1"):
     os.rmdir(DATASET_DIR + "/Acinetobacter.baumanii")
     os.rename(DATASET_DIR + "/Acinetobacter.baumanii_1", DATASET_DIR + "/Acinetobacter.baumanii")
+
+
 print("DIBaS Dataset download complete!")

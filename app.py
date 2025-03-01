@@ -54,9 +54,12 @@ def classify(image):
     # text_features = model.encode_text(text)
     # features = torch.cat((image_features, text_features), dim=1)
     output = classifier(image_features)
-    _, predicted = torch.max(output.data, 1)
-    y_hat = predicted.item()
-    return class_map[y_hat]
+    predictions = torch.softmax(output, dim=1)
+    labels = {class_map[i]: predictions[0][i].item() for i in range(len(class_map))}
+    return labels
+    # _, predicted = torch.max(output.data, 1)
+    # y_hat = predicted.item()
+    # return class_map[y_hat]
     # logits_per_image, logits_per_text = model.logit_scale * image_features @ text_features.t()
     # probs = F.softmax(logits_per_image, dim=-1)
 

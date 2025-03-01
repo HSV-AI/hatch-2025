@@ -37,7 +37,7 @@ classifier = nn.Sequential(
     nn.ReLU(),
     nn.Linear(512, 33)
 )
-classifier.load_state_dict(torch.load('models/openclip_dibas_finetuned.pth'))
+classifier.load_state_dict(torch.load('models/openclip_dibas_finetuned.pth', map_location=device))
 classifier.to(device)
 classifier.eval()
 

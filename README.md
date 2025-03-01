@@ -16,9 +16,16 @@ The first step was to ask Perplexity (free tier) and ChatGPT (paid tier) what to
 
 ```
 I want to try and work on a challenge for a hackathon. Here's the description of the challenge:
-"Explore the use of advanced microscopy and cutting-edge computer vision techniques—leveraging Large Language Models (LLMs), Large Vision Models (LVMs), or custom machine learning algorithms—to rapidly and accurately identify pathogens, disease biomarkers, and other relevant patterns in microscopic images. By advancing the speed and precision of image analysis, participants can help transform fields ranging from medical diagnostics to environmental science, enabling faster data-driven decisions and groundbreaking discoveries."
 
-What would you suggest as a one day project to solve this challenge
+"Explore the use of advanced microscopy and cutting-edge computer vision
+techniques—leveraging Large Language Models (LLMs), Large Vision Models (LVMs), 
+or custom machine learning algorithms—to rapidly and accurately identify pathogens,
+disease biomarkers, and other relevant patterns in microscopic images. By advancing
+the speed and precision of image analysis, participants can help transform fields
+ranging from medical diagnostics to environmental science, enabling faster 
+data-driven decisions and groundbreaking discoveries."
+
+What would you suggest as a one day project to solve this challenge?
 ```
 
 Perplexity Chat Link - https://www.perplexity.ai/search/i-want-to-try-and-work-on-a-ch-dDXaeGPaS6auDMROwg6kPA

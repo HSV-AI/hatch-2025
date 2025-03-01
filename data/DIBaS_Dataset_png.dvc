@@ -1,0 +1,6 @@
+outs:
+- md5: 18bdf44b03fad0a619a38acefad9841f.dir
+  size: 378728138
+  nfiles: 99
+  hash: md5
+  path: DIBaS_Dataset_png

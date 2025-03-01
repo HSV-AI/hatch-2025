@@ -27,5 +27,12 @@
 
 	"hostRequirements": {
 		"gpu": "optional"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter"
+			]
+		}
 	}
 }

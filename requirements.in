@@ -11,3 +11,5 @@ torch
 transformers
 wandb
 dvc[s3]
+open_clip_torch
+gradio

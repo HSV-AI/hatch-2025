@@ -1,0 +1,13 @@
+jupyterlab
+numpy
+lightning
+datasets
+mapboxgl
+matplotlib
+pandas
+scikit-learn
+streamlit
+torch
+transformers
+wandb
+dvc[s3]

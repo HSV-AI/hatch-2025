@@ -1,0 +1,6 @@
+outs:
+- md5: f398860a781735bd284ca0a5479437f8.dir
+  size: 6544720826
+  nfiles: 692
+  hash: md5
+  path: DIBaS_Dataset

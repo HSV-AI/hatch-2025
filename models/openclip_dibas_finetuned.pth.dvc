@@ -1,0 +1,5 @@
+outs:
+- md5: d7625bb20fca8b9aa841378bb1708391
+  size: 2169240
+  hash: md5
+  path: openclip_dibas_finetuned.pth

@@ -1,0 +1,6 @@
+outs:
+- md5: 4f3870bc0b51342d8b4b41a866568661.dir
+  size: 6323353823
+  nfiles: 2505
+  hash: md5
+  path: pvc

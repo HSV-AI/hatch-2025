@@ -75,7 +75,7 @@ for class_dir in example_class_dirs:
 
 # Filter out non-image files and limit to PNG images
 example_files = [f for f in example_files if f.endswith(".png")]
-example_labels = [f"{example_files[i].split("/")[-2]}_{(i)%5}"  for i in range(len(example_files))]
+example_labels = [f'{example_files[i].split("/")[-2]}_{(i)%5}'  for i in range(len(example_files))]
 
 # example_images = [os.path.join(example_dir, f) for f in example_files if f.endswith(".png")]
 # example_images = example_images[:5]  # Limit to 5 examples for demonstration
@@ -89,7 +89,28 @@ demo = gr.Interface(
     examples=example_files,
     examples_per_page=100,
     example_labels=example_labels,
-    
+    title="AI Microscopy Classifier",
+    description="Upload a microscopy image to classify it using Tuned-BiomedClip. Ensure your image is clear for best results.",
 )
 
-demo.launch()
+# Adding Logo and Detailed Instructions using Markdown
+with gr.Blocks(title="Deep Learning Microscopy for Dummies") as app:
+    with gr.Row():
+        gr.Image(value="logo.png", elem_id="logo", width=400, height=300, interactive=False, show_label=False)  # Display Local Image
+        gr.Image(value="qr_image.png", elem_id="logo", width=300, height=300, interactive=False, show_label=False)  # Display Local Image
+
+    gr.Markdown(
+        """
+        # 🧫 Microscopy AI Classifier
+        **How to use this tool:**
+        1. Upload or drag & drop a microscopy image, or select a sample image from the list below.
+        2. Click **Submit** to classify the image.
+        3. The AI will predict the **pathogen or cell type**.
+        
+        🚀 This AI model helps researchers quickly analyze microscopy images!
+        """
+    )
+
+    demo.render()
+
+app.launch()
